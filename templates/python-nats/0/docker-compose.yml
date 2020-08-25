@@ -1,0 +1,12 @@
+version: "2"
+
+services:
+  python-nats:
+    image: dc6da7c5-a52b-4a50-9a37-618e0100da18.dtr.dockertrial.com/vishvesh/hello-world
+    environment:
+      - PYNATS_TOPIC=${NATS_TOPIC}
+      - PYNATS_URI=nats://10.33.100.4:4222
+    network_mode: bridge
+    ports:
+      - "9901:80"
+

@@ -1,0 +1,4 @@
+webserver:
+  image: maho/node-red:1.0
+  ports:
+    - 9090:1880

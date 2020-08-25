@@ -1,0 +1,11 @@
+.catalog:
+  name: Python NATS Subscriber
+  version: latest
+  uuid: pynats-0
+  questions:
+  - variable: NATS_TOPIC
+    description: 'NATS Topic'
+    label: 'NATS Topic:'
+    required: true
+    default: ""
+    type: string

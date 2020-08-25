@@ -1,0 +1,5 @@
+name: CentOS6
+description: |
+  Apache CentOS6
+version: "6"
+category: OS

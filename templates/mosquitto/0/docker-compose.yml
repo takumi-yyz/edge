@@ -1,0 +1,5 @@
+mosquitto:
+  image: eclipse-mosquitto:1.4.12
+  restart: always
+  ports:
+    - ${MOSQUITTO_PORT}:1883

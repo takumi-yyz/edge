@@ -1,0 +1,11 @@
+.catalog:
+  name: "Eclipse Mosquitto"
+  version: "1.4.12"
+  description: "Eclipse Mosquitto is an open source message broker"
+  uuid: mosquitto-0
+  questions:
+    - variable: "MOSQUITTO_PORT"
+      type: "integer"
+      label: "Eclipse Mosquitto Port"
+      description: "Public port for access to Eclipse Mosquitto"
+      default: "1883"

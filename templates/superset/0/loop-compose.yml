@@ -1,0 +1,40 @@
+.catalog:
+  name: "Apache Superset (incubating)"
+  version: "0.22.1"
+  description: "Apache Superset (incubating) is a modern, enterprise-ready business intelligence web application"
+  uuid: superset-0
+  questions:
+    - variable: "SUPERSET_USER"
+      description: ""
+      label: "Superset user"
+      type: "string"
+      default: "admin"
+    - variable: "SUPERSET_FIRSTNAME"
+      description: "Default database that is created when the image is first started."
+      label: "Superset firstname"
+      type: "string"
+      required: false
+      default: "admin"
+    - variable: "SUPERSET_LASTNAME"
+      description: "Default database that is created when the image is first started."
+      label: "Superset lastname"
+      type: "string"
+      required: false
+      default: "user"
+    - variable: "SUPERSET_EMAIL"
+      description: "Default database that is created when the image is first started."
+      label: "Superset email"
+      type: "string"
+      required: false
+      default: "admin@fab.org"
+    - variable: "SUPERSET_PASSWORD"
+      description: "Default database that is created when the image is first started."
+      label: "Superset password"
+      type: "string"
+      required: false
+      default: "admin"
+    - variable: "SUPERSET_PORT"
+      type: "integer"
+      label: "Superset port"
+      description: "Public port for access to Superset"
+      default: "8088"
