@@ -1,11 +1,5 @@
 .catalog:
-  name: "CentOS6"
+  name: "CentOS7"
   version: "1.0"
-  description: "CentOS6 installed Apache"
+  description: "CentOS7"
   uuid: centos-0
-  questions:
-    - variable: "APACHE_PORT"
-      type: "integer"
-      label: "Apache Port"
-      description: "Apache Port"
-      default: "80"

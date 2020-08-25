@@ -1,5 +1,5 @@
-name: CentOS6
+name: CentOS7
 description: |
-  Apache CentOS6
-version: "6"
+  Apache CentOS7
+version: "1"
 category: OS
