@@ -1,0 +1,4 @@
+.catalog:
+  name: Grafana
+  version: latest
+  uuid: grafana-0
