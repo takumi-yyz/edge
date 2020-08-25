@@ -1,5 +1,8 @@
-superset:
-  image: centos:centos7
-  ports:
-    - "3000:3000"
-  restart: always
+version: "2"
+
+services:
+  centos7:
+    image: centos:centos7
+    ports:
+      - "3000:3000"
+    restart: always
