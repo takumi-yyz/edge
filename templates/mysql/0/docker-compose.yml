@@ -9,3 +9,4 @@ postgres:
     - mysql-vol:/var/lib/mysql
   ports:
     - ${MYSQL_DB_PORT}:3306
+  network_mode: bridge
