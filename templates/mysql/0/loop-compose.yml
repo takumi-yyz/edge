@@ -1,0 +1,31 @@
+.catalog:
+  name: "MySQL"
+  version: "latest"
+  description: "MySQL"
+  uuid: mysql-0
+  questions:
+    - variable: "MYSQL_DB"
+      description: "Default database that is created when the image is first started."
+      label: "MySQL Database Name"
+      type: "string"
+      required: true
+      default: "sample"
+    - variable: "MYSQL_USER"
+      type: "string"
+      label: "MySQL user"
+      description: |
+        is used in conjunction with MYSQL_PASSWORD to set a user and its password. 
+        This will create the specified user with superuser power and a database with the same name. 
+        If it is not specified, then the default user of postgres will be used.
+      default: "user"
+    - variable: "MYSQL_PASSWORD"
+      type: "string"
+      label: "MySQL password"
+      description: |
+        sets the superuser password for MySQL. The default superuser is defined by the <<MySQL user>> variable
+      default: "passw0rd"
+    - variable: "MYSQL_PORT"
+      type: "integer"
+      label: "MySQL Server Port"
+      description: "Public port for access to MySQL Server"
+      default: "3306"

@@ -1,0 +1,5 @@
+name: MySQL
+description: |
+  This is always the latest MySQL from docker official images.
+version: "latest"
+category: Database

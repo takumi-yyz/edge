@@ -1,0 +1,11 @@
+postgres:
+  image: mysql
+  restart: always
+  environment:
+    MYSQL_DB: ${MYSQL_DB_DB}
+    MYSQL_DB_USER: ${MYSQL_DB_USER}
+    MYSQL_DB_PASSWORD: ${MYSQL_DB_PASSWORD}
+  volumes:
+    - mysql-vol:/var/lib/mysql
+  ports:
+    - ${MYSQL_DB_PORT}:3306
