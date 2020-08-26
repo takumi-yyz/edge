@@ -1,15 +1,15 @@
 version: "2"
 
 services:
-    postgres:
+    mysql:
       image: mysql
       restart: always
       environment:
-        MYSQL_ROOT_USER: ${MYSQL_DB_USER}
-        MYSQL_ROOT_PASSWORD: ${MYSQL_DB_PASSWORD}
-        MYSQL_DATABASE: ${MYSQL_DB_DB}
+        MYSQL_ROOT_USER: ${MYSQL_USER}
+        MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD}
+        MYSQL_DATABASE: ${MYSQL_DB}
       volumes:
         - mysql-vol:/var/lib/mysql
       ports:
-        - ${MYSQL_DB_PORT}:3306
+        - ${MYSQL_PORT}:3306
       network_mode: bridge

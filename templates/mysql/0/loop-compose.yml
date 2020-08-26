@@ -16,7 +16,7 @@
       description: |
         is used in conjunction with MYSQL_PASSWORD to set a user and its password. 
         This will create the specified user with superuser power and a database with the same name. 
-        If it is not specified, then the default user of postgres will be used.
+        If it is not specified, then the default user of mysql will be used.
       default: "user"
     - variable: "MYSQL_PASSWORD"
       type: "string"
