@@ -1,0 +1,11 @@
+version: "2"
+
+services:
+    influxdb:
+      image: influxdb
+      restart: always
+      volumes:
+        - influxdb-vol:/var/lib/influxdb
+      ports:
+        - 8086:8086
+      network_mode: bridge

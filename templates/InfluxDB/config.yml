@@ -1,0 +1,6 @@
+name: InfluxDB
+description: |
+  This is always the latest InfluxDB from docker official images.
+  It is used for Grafana.
+version: "latest"
+category: Database

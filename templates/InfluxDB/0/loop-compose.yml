@@ -1,0 +1,5 @@
+.catalog:
+  name: "InfluxDB"
+  version: "latest"
+  description: "This is InfluxDB.You can use port 8086 for access."
+  uuid: influxdb-0
