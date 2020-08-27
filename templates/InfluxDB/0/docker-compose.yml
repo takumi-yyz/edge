@@ -7,5 +7,5 @@ services:
       volumes:
         - influxdb-vol:/var/lib/influxdb
       ports:
-        - 8086:8086
+        - 18086:8086
       network_mode: bridge
